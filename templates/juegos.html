@@ -41,19 +41,19 @@ Hacer una donación vía PayPal: https://paypal.me/LuisCabreraBenito
             <h3 class="is-size-3">Juegos</h3>
             <a href="{{url_for('formulario_agregar_juego')}}" class="button is-success">Agregar</a>
             <table class="table">
-                <thead>
-                    <tr>
-                        <th>Nombre</th>
+                <thead><!---cabecera table-->
+                    <tr><!---table row-->
+                        <th>Nombre</th><!---table head / column names-->
                         <th>Descripción</th>
                         <th>Precio</th>
                         <th>Editar</th>
                         <th>Eliminar</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody><!---table body-->
                     {% for juego in juegos %}
                     <tr>
-                        <td>{{juego[1]}}</td>
+                        <td>{{juego[1]}}</td> <!---celdas-->
                         <td>{{juego[2]}}</td>
                         <td>{{juego[3]}}</td>
                         <td>

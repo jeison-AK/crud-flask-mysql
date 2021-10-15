@@ -41,7 +41,6 @@ app = Flask(__name__)
 Definición de rutas
 """
 
-
 @app.route("/agregar_juego")
 def formulario_agregar_juego():
     return render_template("agregar_juego.html")
