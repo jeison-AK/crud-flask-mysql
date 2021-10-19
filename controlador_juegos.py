@@ -71,7 +71,7 @@ def obtener_juego_por_id(id):
     conexion.close()
     return juego
 
-
+#-ak momento de darle al boton guardad actualiza los datos
 def actualizar_juego(nombre, descripcion, precio, id):
     conexion = obtener_conexion()
     with conexion.cursor() as cursor:
